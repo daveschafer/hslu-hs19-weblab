@@ -13,4 +13,20 @@
         </label>
     </div>
 
+    <div>-----</div>
+    <div>
+        <label>Shorting Length:
+            <input [(ngModel)]="shortinglength">
+        </label>
+    </div>
+
+    <div>
+        <label>Shorting Suffix:
+            <input [(ngModel)]="shortingsuffix">
+        </label>
+    </div>
+
+    <div><span><b>Shorted Name:</b> </span>{{hero.name | shortHeroName: shortinglength : shortingsuffix}}</div>
+
+
 </div>

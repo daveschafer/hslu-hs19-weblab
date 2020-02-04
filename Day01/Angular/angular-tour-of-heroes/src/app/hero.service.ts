@@ -19,4 +19,8 @@ export class HeroService {
     this.messageService.add('HeroService: fetched heroes');
     return of(HEROES);
   }
+
+  heroSelected(hero: Hero): void {
+    this.messageService.add(`Hero ${hero.name} selected`)
+  }
 }
